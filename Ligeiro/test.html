@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            background-color: #515c8d;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 32px;
+            margin: 4px 2px;
+            cursor: pointer;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        
+        body {
+            text-align: center;
+        }
+        
+        img {
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <input id="your_ass">
+    <input type="text" id="your_ass2">
+    <button onclick="ass()">calcular</button>
+    <div id="couthe"></div>
+
+</body>
+
+</html>
+<script>
+    function ass() {
+        var soma = Number(your_ass.value);
+        var soma2 = Number(your_ass2.value);
+        var resultado = soma * soma2
+        couthe.innerHTML = `${resultado}`
+    }
+</script>

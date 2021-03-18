@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: gray;
+        font-size: 30px;
+    }
+    
+    div {
+        color: goldenrod;
+    }
+</style>
+
+<body>
+    cidade natal:
+    <input id="in_cidade" type="text"><br> ano de nascimento:
+    <input id="in_ano" type="text"><br>
+    <button onclick="cad()">Cadastrar</button>
+    <div id="resultado"></div>
+
+</body>
+
+</html>
+<script>
+    function cad() {
+        var cidade = in_cidade.value;
+        var ano = in_ano.value;
+        alert(`Você nasceu na cidade de ${cidade} em ${ano}`);
+        resultado.innerHTML = `Você nasceu na cidade de ${cidade} em ${ano}`
+
+    }
+</script>
